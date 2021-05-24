@@ -29,7 +29,9 @@ function generatePassword () {
       var randomuppercaseletters = function () {
         return String.uppercaseletters(Math.floor(Math.random() *26));
       }
-      console.log("uppercase letters will be included.");
+      console.log("Uppercase letters will be included.");
+    } else {
+      console.log("Uppercase letters will not be included.");
     };
 
   var lowercaseletters = confirm("Do you want lowercase letter?");
@@ -39,6 +41,8 @@ function generatePassword () {
       return String.lowercaseletters(Math.floor(Math.random() *26));
     }
     console.log("Lowercase letters will be included.");
+  } else {
+    console.log("Lowercase letters will not be included.");
     };
   var specialcharacters = confirm("Do you want special Characters?");
     if(specialcharacters === true){
@@ -47,6 +51,8 @@ function generatePassword () {
       return String.specialcharacters(Math.floor(Math.random() *26));
     }
     console.log("Special characters will be included.");
+  } else {
+    console.log("Special characters will not be included.");
     };
   var numbers = confirm("Do you want numbers?");
     if(numbers === true){
@@ -55,16 +61,14 @@ function generatePassword () {
       return String.numbers(Math.floor(Math.random() *26));
     }
     console.log("Numbers will be included.");
+  } else {
+    console.log("Numbers will not be included.");
     };
-  var passwordLength = 8,
-      charset = "abcdefghijklmnopqrstuvyzABCDEFGHIJKLMNOPQRSTUVYZ!@#$%^&*()_+-=0123456789";
-      retVal = "";
-  for (var i = 0, n = charset.length; i < length; ++i); {
-      retVal += charset.charAt(Math.floor(Math.random() * n));
+
 
   };
   console.log(uppercaseletters)
-  console.log(passwordLength)
+  console.log(passwordlength)
   console.log(lowercaseletters)
   console.log(specialcharacters)
   console.log(numbers)
