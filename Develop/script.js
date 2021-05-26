@@ -1,21 +1,22 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var upperCaseLetters = ["ABCDEFGHIJKLMNOPQRSTUVYZ"];
-var lowerCaseLetters = ["abcdefghijklmnopqrstuvyz"];
-var specialCharacters = ["!@#$%^&*()_+-="];
-var numbers = ["0123456789"];
+var upperCaseLetters = ['ABCDEFGHIJKLMNOPQRSTUVYZ'];
+var lowerCaseLetters = ['abcdefghijklmnopqrstuvyz'];
+var specialCharacters = ['!@#$%^&*()_+-='];
+var numbers = ['0123456789'];
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var passwordText = document.querySelector("#passwordText");
 
-  passwordText.value = password;
+  passwordText.value = generatedpassword;
 
-}
+};
+
 //function for the password
 function generatePassword () {
-  var password = "";
+  var password = '';
 
   var passwordLength = prompt("How long should your password be? (8-128 chars");
     if(passwordLength <8 || passwordLength >128 ) {
@@ -48,7 +49,7 @@ function generatePassword () {
     if(specialCharacters === true){
     password += specialCharacters;
     var randomspecialcharacters = function () {
-      return String.specialCharacters(Math.floor(Math.random() *26));
+      return String.specialCharacters(Math.floor(Math.random() *14));
     }
     console.log("Special characters will be included.");
   } else {
@@ -58,21 +59,20 @@ function generatePassword () {
     if(numbers === true){
     password += numbers;
     var randomnumbers = function () {
-      return String.numbers(Math.floor(Math.random() *26));
+      return String.numbers(Math.floor(Math.random() *10));
     }
     console.log("Numbers will be included.");
   } else {
     console.log("Numbers will not be included.");
     };
 
-    for (var i = 0, n = charset.passwordlength; i < passwordlength; ++i); {
-      retVal += charset.charAt(Math.floor(Math.random() * n));
+    for (var i = 0, n = password.passwordLength; i < passwordLength; ++i); {
 
 
   };
 
-console.log(password);
-return password;
-}
+console.log(generatedPassword);
+return generatedPassword; 
+};
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
