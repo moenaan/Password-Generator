@@ -46,3 +46,5 @@ N/A
 ## Questions
 
 If you have any questions about the repo, open an issue or contact me directly at mohammedlee27@gmail.com. You can find more of my work at [moenaan](https://github.com/moenaan/).
+
+Deplyed page: https://moenaan.github.io/Password-Generator/
