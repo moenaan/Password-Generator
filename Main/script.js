@@ -21,7 +21,7 @@ function getPasswordOptions() {
 
   // Conditional statement to check if password length is a number. Prompts end if this evaluates false
   if (Number.isNaN(length)) {
-    alert('Password length must be a number');
+    alert('Please enter a number.');
     return null;
   }
 
